@@ -87,11 +87,11 @@ namespace RESTvsGRPC
     {
         public AllowNonOptimized()
         {
-            Add(JitOptimizationsValidator.DontFailOnError);
+            AddValidator(JitOptimizationsValidator.DontFailOnError);
 
-            Add(DefaultConfig.Instance.GetLoggers().ToArray());
-            Add(DefaultConfig.Instance.GetExporters().ToArray());
-            Add(DefaultConfig.Instance.GetColumnProviders().ToArray());
+            AddLogger(DefaultConfig.Instance.GetLoggers().ToArray());
+            AddExporter(DefaultConfig.Instance.GetExporters().ToArray());
+            AddColumnProvider(DefaultConfig.Instance.GetColumnProviders().ToArray());
         }
     }
 }
