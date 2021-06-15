@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ModelLibraryWCF.WCF" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ModelLibraryWCF.WCF" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57985/MeteoriteLandingsService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfMeteoriteLanding">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MeteoriteLanding" nillable="true" type="tns:MeteoriteLanding" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMeteoriteLanding" nillable="true" type="tns:ArrayOfMeteoriteLanding" />
+  <xs:complexType name="MeteoriteLanding">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Fall" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GeoLocation" nillable="true" type="tns:GeoLocation" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Mass" type="xs:double" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NameType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecLAT" type="xs:double" />
+      <xs:element minOccurs="0" name="RecLONG" type="xs:double" />
+      <xs:element minOccurs="0" name="Year" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MeteoriteLanding" nillable="true" type="tns:MeteoriteLanding" />
+  <xs:complexType name="GeoLocation">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Coordinates" nillable="true" type="q1:ArrayOfdouble" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GeoLocation" nillable="true" type="tns:GeoLocation" />
+</xs:schema>

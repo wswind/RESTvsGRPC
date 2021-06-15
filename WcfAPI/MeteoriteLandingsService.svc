@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WcfAPI.MeteoriteLandingsService" CodeBehind="MeteoriteLandingsService.svc.cs" %>

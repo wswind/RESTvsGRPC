@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b2b34c48-1ef0-4470-a5f7-d482c28571d3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57985/MeteoriteLandingsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MeteoriteLandingsService.xsd" MetadataType="Schema" ID="715fbf9d-50f7-406a-85c6-82e2769ed9a6" SourceId="1" SourceUrl="http://localhost:57985/MeteoriteLandingsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MeteoriteLandingsService1.xsd" MetadataType="Schema" ID="b776bd1c-c71a-4aca-9b63-0a63a9a5f513" SourceId="1" SourceUrl="http://localhost:57985/MeteoriteLandingsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MeteoriteLandingsService2.xsd" MetadataType="Schema" ID="520a00c7-6436-42d0-8d02-12b0c22ee615" SourceId="1" SourceUrl="http://localhost:57985/MeteoriteLandingsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MeteoriteLandingsService.wsdl" MetadataType="Wsdl" ID="83a871bc-32a3-452f-a850-80f426bf9a94" SourceId="1" SourceUrl="http://localhost:57985/MeteoriteLandingsService.svc?wsdl" />
+    <MetadataFile FileName="MeteoriteLandingsService.disco" MetadataType="Disco" ID="9b5d6770-59a5-4b83-8a10-ec1203c16e41" SourceId="1" SourceUrl="http://localhost:57985/MeteoriteLandingsService.svc?disco" />
+    <MetadataFile FileName="MeteoriteLandingsService3.xsd" MetadataType="Schema" ID="2190e4e8-ee73-41c3-8e2b-79d15427f36e" SourceId="1" SourceUrl="http://localhost:57985/MeteoriteLandingsService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
