@@ -28,19 +28,5 @@ namespace ModelLibraryWCF.Data
             }
         }
 
-        static List<MeteoriteLanding> wcfMeteoriteLandings;
-        public static List<MeteoriteLanding> WcfMeteoriteLandings
-        {
-            get
-            {
-                if (wcfMeteoriteLandings == null)
-                {
-                    wcfMeteoriteLandings = JsonConvert.DeserializeObject<List<MeteoriteLanding>>(MeteoriteLandingsJson);
-                }
-                return wcfMeteoriteLandings;
-            }
-        }
-
-
     }
 }

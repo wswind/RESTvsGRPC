@@ -1,5 +1,6 @@
 ﻿using ModelLibraryWCF.Data;
 using ModelLibraryWCF.WCF;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +15,22 @@ namespace WcfAPI
     // 注意: 为了启动 WCF 测试客户端以测试此服务，请在解决方案资源管理器中选择 Service1.svc 或 Service1.svc.cs，然后开始调试。
     public class MeteoriteLandingsService : IMeteoriteLandingsService
     {
+        static List<MeteoriteLanding> wcfMeteoriteLandings;
+        public static List<MeteoriteLanding> WcfMeteoriteLandings
+        {
+            get
+            {
+                if (wcfMeteoriteLandings == null)
+                {
+                    wcfMeteoriteLandings = JsonConvert.DeserializeObject<List<MeteoriteLanding>>(MeteoriteLandingData.MeteoriteLandingsJson);
+                }
+                return wcfMeteoriteLandings;
+            }
+        }
+
         public IEnumerable<MeteoriteLanding> GetLargePayload()
         {
-            return MeteoriteLandingData.WcfMeteoriteLandings;
+            return WcfMeteoriteLandings;
         }
 
         public string GetSmallPayload()
