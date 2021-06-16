@@ -1,5 +1,5 @@
 # RESTvsGRPC
-Evaluating Performance of REST vs. gRPC
+Evaluating Performance of REST vs gRPC vs WCF
 
 ## Starts Services
 
