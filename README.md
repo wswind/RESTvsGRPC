@@ -7,13 +7,16 @@ Evaluating Performance of REST vs gRPC vs WCF
 dotnet run -p RestAPI -c Release
 dotnet run -p GrpcAPI -c Release
 dotnet run -p RESTvsGRPC -c Release
-dotnet run -p WcfAPI -c Release
+use visual studio to run wcf with release configuration
 ```
 
 
 # Benchmark
 
 ```ini
+dotnet run -p RESTvsGRPC -c Release
+use visual studio to run WCFBenchmark with release configuration
+
 BenchmarkDotNet=v0.13.0, OS=Windows 10.0.19043.1055 (21H1/May2021Update)
 Intel Core i5-8250U CPU 1.60GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical cores
 
